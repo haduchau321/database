@@ -46,13 +46,6 @@ async def get_current_user(db: Session = Depends(get_db),token: str = Depends(oa
         raise credentials_exception
     return user
 
-def get_place(db: Session, place_id: int):
-    return db.query(DBPlace).where(DBPlace.id == place_id).first()
-
-@app.post('/places/', response_model=Place)
-def create_places_view(place: Place, db: Session = Depends(get_db)):
-    db_place = create_place(db, place)
-    return db_place
 
 @app.post("/token", response_model=schemas.Token)
 async def login_for_access_token(db: Session = Depends(get_db),form_data: OAuth2PasswordRequestForm = Depends()):
