@@ -5,7 +5,7 @@ import os
 import cloudinary
 
 cloudinary.config(
-    cloud_name= "postgresql-asymmetrical-64288",
+    cloud_name= "vztbtnsawpretu",
     api_key= "data-key",
     api_secret ="dfgdfhdfhfghfghfghfghfghfgh"
 )
