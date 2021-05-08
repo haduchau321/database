@@ -5,13 +5,13 @@ import os
 import cloudinary
 
 cloudinary.config(
-    cloud_name= "hnduusros",
-    api_key= "927131722149478",
-    api_secret ="he5lFnOeoeRDBmV9z9QKCTxhLn0"
+    cloud_name= "postgresql-asymmetrical-64288",
+    api_key= "data-key",
+    api_secret ="dfgdfhdfhfghfghfghfghfghfgh"
 )
 
 # SQLALCHEMY_DATABASE_URL = "sqlite:///./sql_app.db"
-SQLALCHEMY_DATABASE_URL = "postgres://audcltysmukkjt:fa3bf618e3522f1adea51b8ae6ca778c3fdd2e70b9a2f68defcd7e588cf0a024@ec2-52-71-161-140.compute-1.amazonaws.com:5432/del74sq4ertbru"
+SQLALCHEMY_DATABASE_URL = "postgres://vztbtnsawpretu:5e5f7e92555c0bf3bd914bb5598ef3a020631a3b6832e5f65c2d8337075a2635@ec2-3-234-85-177.compute-1.amazonaws.com:5432/de2v2355mcq1je"
 
 engine = create_engine(
     SQLALCHEMY_DATABASE_URL,
